@@ -1,0 +1,14 @@
+{
+    "name": "pc/app",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alfredo Mendoza",
+            "email": "kick-1930@hotmail.com"
+        }
+    ],
+    "require": {
+        "cloudinary/cloudinary_php": "^1.14"
+    }
+}
