@@ -18,7 +18,7 @@ class Review
 
             $stmt = $this->connection->prepare($query);
             if ($stmt->execute()) {
-                $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                $result = ($stmt->rowCount() > 0) ? $stmt->fetchAll(PDO::FETCH_ASSOC) : false;
             } else {
                 $result = false;
             }
